@@ -1,4 +1,4 @@
-# JavaScript scope and *this* in different scenarios
+# JavaScript *scope* and *this* in different scenarios
 
 我尽可能地列举了不同的 JavaScript 环境（浏览器环境和 Node 环境）和不同的应用场景下，‘this’ 这个特殊的引用的指向。很难用一句话准确的概括所有的场景，但最接近的可以是：在全局环境中，this 总是指向顶层对象；而函数中的 this 往往指向的是该函数的调用对象。
 
