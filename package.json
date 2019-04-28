@@ -1,0 +1,21 @@
+{
+  "name": "scope-and-this-in-js",
+  "version": "1.0.0",
+  "description": "scope and this in javascript",
+  "main": "index.js",
+  "author": "https://kawhi.site",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.7.1",
+    "script-loader": "^0.7.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config ./browser/webpack.config.js",
+    "test": "jest"
+  }
+}
