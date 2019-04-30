@@ -5,11 +5,15 @@ const instanceFn = require('@/fn/instanceFn')
 const nestedGlobalFn = require('@/fn/nestedGlobalFn')
 const objectFn = require('@/fn/objectFn')
 const strictGlobalFn = require('@/fn/strictGlobalFn')
+const trycatchFn = require('@/fn/trycatchFn')
 const _ = require('_')
 
 document.write('<h1>Does "this" refer to "window" in below scenarios, and if not, what does it refer to ?</h1>')
 document.write(`<pre><code>${globalFn.callee}</code></pre>`)
 postAction(globalFn())
+
+document.write(`<pre><code>${trycatchFn.callee}</code></pre>`)
+postAction(trycatchFn())
 
 document.write(`<pre><code>${strictGlobalFn.callee}</code></pre>`)
 postAction(strictGlobalFn())

@@ -5,9 +5,14 @@ const instanceFn = require('./fn/instanceFn')
 const nestedGlobalFn = require('./fn/nestedGlobalFn')
 const objectFn = require('./fn/objectFn')
 const strictGlobalFn = require('./fn/strictGlobalFn')
+const trycatchFn = require('./fn/trycatchFn')
 
 test(globalFn.description, () => {
     expect(globalFn()).toBe(global)
+})
+
+test(trycatchFn.description, () => {
+    expect(trycatchFn()).toBe(global)
 })
 
 test(strictGlobalFn.description, () => {
