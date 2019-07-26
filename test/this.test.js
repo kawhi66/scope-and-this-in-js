@@ -1,11 +1,11 @@
-const arrayFn = require('./fn/arrayFn')
-const constructorFn = require('./fn/constructorFn')
-const globalFn = require('./fn/globalFn')
-const instanceFn = require('./fn/instanceFn')
-const nestedGlobalFn = require('./fn/nestedGlobalFn')
-const objectFn = require('./fn/objectFn')
-const strictGlobalFn = require('./fn/strictGlobalFn')
-const trycatchFn = require('./fn/trycatchFn')
+var arrayFn = require('../fn/arrayFn')
+var constructorFn = require('../fn/constructorFn')
+var globalFn = require('../fn/globalFn')
+var instanceFn = require('../fn/instanceFn')
+var nestedGlobalFn = require('../fn/nestedGlobalFn')
+var objectFn = require('../fn/objectFn')
+var strictGlobalFn = require('../fn/strictGlobalFn')
+var trycatchFn = require('../fn/trycatchFn')
 
 test(globalFn.description, () => {
     expect(globalFn()).toBe(global)
@@ -40,7 +40,7 @@ test(arrayFn.description, () => {
 })
 
 test(constructorFn.description, () => {
-    const instance = new constructorFn.wrapper()
+    var instance = new constructorFn.wrapper()
     expect(instance.fn()).toBe(instance)
 })
 
@@ -49,7 +49,7 @@ test(constructorFn.description1, () => {
 })
 
 test(instanceFn.description, () => {
-    const instance = new instanceFn.wrapper()
+    var instance = new instanceFn.wrapper()
     expect(instance.fn()).toBe(instance)
 })
 
